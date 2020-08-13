@@ -99,10 +99,42 @@ print ('a'<'b')
 print ('a'>'b')
 print ('a'<='b')
 print ('a'>='b')
-print ('a' <= 1)  # This will blow up coz both are differ type however
+# print ('a' <= 1)  # This will blow up coz both are differ type however
 print ('a' == 1) # This will give us False coz it is not comparing here, it is only checking things
 print (1 is 1)
 print ('a' is 'a')
 print (id('a') is id('a'))
 
+# Parenthesis and List/Dictionary/Set literals
+# Accessing attributes (subscription, slicing, function/method call, attribute reference)
+# Exponentiation (**)
+# Positive, Negative, and bitwise complement
+# Multiplication *, Division /, Floor Division //, Modulo %
+# Addition +, Subtraction -
+# Bitwise Shifts << & >>
+# Bitwise AND &
+# Bitwise XOR ^
+# Bitwise OR |
+# Comparison operators (in, not in, is, is not, <, >, <=, >=, ==, !=)
+# Boolean NOT not
+# Boolean AND and
+# Boolean OR or
+# Conditions if
 
+#Typecating
+
+print (1)
+print (float(1))
+print (int(1.2))
+print (str(1.2))
+ 
+print (1 and 0) # This will return flase value which is 0
+print ('This' and 'That') # this will return false value too
+print ('This' and 0 and 'That') # But this will return first false valuw which is 0 so it will not consider 'That'
+print (0.0 and 1) # if first value is false them it will return false value so make sure we add true first
+
+# Input function
+
+input() # to input anything
+favorite = input("Fav Color : ") # use to print message and store value in variable
+favorite # use to see fav color
