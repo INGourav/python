@@ -138,3 +138,44 @@ print (0.0 and 1) # if first value is false them it will return false value so m
 input() # to input anything
 favorite = input("Fav Color : ") # use to print message and store value in variable
 favorite # use to see fav color
+
+# Immutability, something can't be changed
+
+mystr = 'testing'
+print(mystr.capitalize())
+print(mystr)
+print(id(mystr))
+print(id('testing'))
+otherstrng = 'testing'
+print(id(mystr) == id(otherstrng)) # both have the same id and it will return true as py knows it has already created
+
+# len or length function
+'testing'
+mystr = 'testing'
+print(len(mystr))
+
+# Indexing and Slicing
+
+test_str = 'testing'
+test_str[0]
+test_str[10]  # it will blow up as we have less length string
+test_str[len(test_str) - 1]
+test_str[-1]
+test_str[-4]
+test_str[-8]  # it will blow up as we have less length string
+
+# If we want to get a subsection of our string then we'll do what is called slicing. Slicing allows us to specify the index of the first element that we would like, followed by the index just beyond the last item that we'd like. We separate these indexes by using a colon (:)
+test_str[0:2]
+test_str[3:5]
+
+# If we'd like to get all of the items after our starting index then we can use the length of the string as our second index, even though it's technically out of range. Or we can simply put nothing after the colon:
+test_str[2:len(test_str)]
+test_str[2:]
+
+# The last thing to mention about slicing is that there is a third number that we can use: the "step" value. By default, this value is 1 and just means that we'll go one-by-one through the sequence. But we can change this to grab every other item if we'd like by adding a second colon and the step size that we'd like to use:
+test_str
+test_str[1:5:2]
+test_str[1::2]
+
+# One neat thing that we can do with this step option is stepping backward by using a negative step value. We can reverse an entire string by leaving off the start and end indexes and setting the step value to -1:
+test_str[::-1]
