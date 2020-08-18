@@ -179,3 +179,23 @@ test_str[1::2]
 
 # One neat thing that we can do with this step option is stepping backward by using a negative step value. We can reverse an entire string by leaving off the start and end indexes and setting the step value to -1:
 test_str[::-1]
+
+# List
+mylist=[1,2,3] # all are same
+newlist=['a',1,1.0,False] # we can use multiple type value in list
+
+# List are mutable so means we can modify, So it is not similar to string and other thing
+mylist[0]='g' # to replace a item in list
+mylist
+mylist+[8,9,10] # to concat something in list
+mylist+=[8,9,10] # to add something in list
+mylist[1:3]=['b','c'] # this will add b and c in the list at 2nd and 3rd position
+newlist[0:]=[] # this will delete everything after zero value so means only we will have 'a' in the list
+testlist=['a','b','c','d',5,6,7]
+testlist[4:]=[]
+testlist
+del mylist[0] # del is not a function it is a statment thats why it has no ()
+mylist
+# if we use {del mylist} then it will delete eberything entire variable.
+
+
