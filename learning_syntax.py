@@ -199,3 +199,94 @@ mylist
 # if we use {del mylist} then it will delete eberything entire variable.
 
 
+# List and Function and Method
+mylist=[1,2,3]
+mylist.append(4)
+mylist
+mylist.insert(0,'a')
+mylist
+mylist.index(3)
+mylist=[1,2,3]
+4 in mylist
+4 not in mylist
+mylist[1,3,2,5,1,6]
+sorted(mylist)
+reversed(mylist)
+list(reversed(mylist))
+list(reversed(sorted(mylist)))
+
+# Nested Lists: Matrices and Cubes
+mymatrix = [[1,2,2],[4,5,6]]
+mymatrix
+rowcount= len(mymatrix)
+columncount=len(mymatrix[0])
+mymatrix[0][1]
+mymatrix[1][1]
+
+# Tuple it is a imutable type which cannot be changed
+point = (2.0,3.0)  # we define tuple using ()
+point[0] = 1  # this will give us error as tuple can't be chnanged so at fitst place it always be 2.0
+point_3d = point + (4.0,)  # now we are adding old tuple value in new tuple and in the last we have to put ,
+point_3d
+x, y, z = point_3d
+x  # so here x would be 2.0
+y  # so here x would be 3.0
+z  # so here x would be 3.0
+print("My name is: %s %s" % ("Gourav", "Kumar")) # we'll most likely to see tuples is while looking at a format string that's compatible with Python 2 (though this will go away soon)\
+
+
+# Tuple Vs Lists
+person = ('Gourav Kumar', 26, '23-23-23')
+person2 = ('Saurabh Kumar', 23, '')
+person[0]
+#'Gourav Kumar'
+person2[0]
+#'Saurabh Kumar'
+my_list = [1, 2, 3]
+my_tuple = (my_list, 1)
+my_tuple
+#([1, 2, 3], 1)
+other_list = [1, 2, my_tuple]
+other_list
+#[1, 2, ([1, 2, 3], 1)]
+my_tuple
+#([1, 2, 3], 1)
+my_list.append(1)
+my_tuple
+#([1, 2, 3, 1], 1)
+
+
+# Dictionary
+ages = { 'kevin': 59, 'alex': 29, 'bob': 40 }
+ages
+#{'kevin': 59, 'alex': 29, 'bob': 40}
+ages['kevin']
+#59
+ages['billy']
+#Traceback (most recent call last):
+#  File "<stdin>", line 1, in <module>
+#KeyError: 'billy'
+ages['kayla'] = 21
+ages
+#{'kevin': 59, 'alex': 29, 'bob': 40, 'kayla': 21}
+del ages['kevin']
+ages
+#{'alex': 29, 'bob': 40, 'kayla': 21}
+del ages
+ages
+#Traceback (most recent call last):
+#  File "<stdin>", line 1, in <module>
+#NameError: name 'ages' is not defined
+ages = {'kevin': 59, 'bob': 40}
+'kevin' in ages
+#True
+59 in ages
+#False
+weights = dict(kevin=160, bob=240, kayla=135)
+weights
+#{'kevin': 160, 'bob': 240, 'kayla': 135}
+colors = dict([('kevin', 'blue'), ('bob', 'green'), ('kayla', 'red')])
+colors
+#{'kevin': 'blue', 'bob': 'green', 'kayla': 'red'}
+
+
