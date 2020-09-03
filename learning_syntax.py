@@ -333,11 +333,157 @@ template.format('Gourav', 'Python')
 "My name is {0}, and I really enjoy {1}. Have a nice day! -{0}".format('Gourav', 'Python')
 
 
+# If Else
+if CONDITION:
+    print("CONDITION was True")
 
 
+>>> if True:
+...     print("Was True")
+...
+Was True
+>>> if False:
+...     print("Was True")
+...
+>>>
 
 
+>>> if False:
+...     print("Was True")
+... else:
+...     print("Was False")
+...
+Was False
 
+# elif
+if CONDITION:
+   # do something
+elif CONDITION_2:
+   # do a different thing
+else:
+   # do something if all conditions are False
+
+
+# Utilizing `pass`
+if CONDITION:
+   # do something
+else:
+   pass
+
+
+# The while loop
+while 1 < 2:
+    print("print infinte loop")
+
+count = 1
+while count <= 4:
+    print("looping")
+    count += 1
+
+# For loop
+# syntax
+for temp_var in sequence:
+    pass
+
+colors = [Red, Yellow, Oragne]
+for color in colors:
+    print(colr)
+
+point = (1,2,3)
+for value in point:
+    print(value)
+
+ages = {'Gourav':26, 'Saurah': 24}
+for key in ages:
+    print(key)
+
+for key, value in ages.items():
+    print(key, value)
+
+for letters in 'mystr':
+    print(letters)
+
+
+# Nested loops and conditions
+counter = 1
+while counter <= 25:
+    if counter % 4 == 0:
+        print(counter)
+    counter += 1
+
+# Controlling Loop Execution with `break` and `continue`
+count = 1
+while <= 10:
+    if count % 2 == 0:
+        break
+    print (f"we are couting odd numbers: {count}")
+    count += 1
+
+
+count = 1
+while <= 10:
+    if count % 2 == 0:
+        continue
+    print (f"we are couting odd numbers: {count}")
+    count += 1
+
+colors = [Blue, Red, Green, Oragne]
+for color in colors:
+    if color == 'Blue':
+        continue
+    elif color == 'Green':
+        break
+    print(color)
+
+
+# Integrating `else` with Loops
+counter = 1
+while counter <= 4:
+    print(counter)
+    counter += 1
+else:
+    print("while completed")
+
+
+for i in [1, 2, 3, 4, 5]:
+    print(i)
+else:
+    print("For complete")
+
+# Using `range`
+myrange = range(10)
+myrange
+list(myrange)
+
+list(range(1,14,2))
+
+count = 1
+while count <=4:
+    print("looping")
+    count += 1
+
+for _ in range(4):
+    print("looping")
+
+# List Comprehensions
+colors = [red, yellow]
+uppercase_colors = []
+for color in colors:
+    uppercase_colors.append(color.upper())
+uppercase_colors
+
+colors = [red, yellow]
+uppercase_colors = [color.upper() for color in colors]
+uppercase_colors
+
+colors = [red, yellow]
+warm_colors = []
+for color in colors:
+    if color in ['red', 'yellow', 'green']:
+        warm_colors.append(color)
+
+colors = [red, yellow]
+warm_colors = [color for color in colors if color in ['red', 'yellow', 'green']]
 
 
 
