@@ -290,3 +290,76 @@ colors
 #{'kevin': 'blue', 'bob': 'green', 'kayla': 'red'}
 
 
+
+# Dictionary Method
+ages = { 'kevin': 59, 'alex': 29, 'bob': 40 }
+ages.keys()
+list(ages.keys())
+ages.values()
+ages.items()
+
+
+# String Encodings and Functions
+ord('a')  # This will print code point of a
+ord('\u2122')
+'\u2122'
+chr(8382)
+
+# Useful String Methods, Part 1
+"String Test".lower()
+"String Test".upper()
+"String Test".capitalize()
+"String Test".title()
+"Test@XYZ.com".lower() == "test@xyz.com"
+mystr = "String Test"
+mystr.isascii()
+mystr.islower()
+mystr.title().istitle()
+' '.isspace()
+"1.0".isdecimal()
+"1".isdecimal()
+"This is print".isprintable()
+"This is print\n".isprintable()
+
+
+# Useful String Methods, Part 2
+phrase = "This is a simple phrase"
+words = phrase.split()
+url = "https://blog.com/users/gourav"
+user = url.split('/')[-1]
+", ".join(words)
+template = "My name is {}, and I really enjoy {}"
+template.format('Gourav', 'Python')
+"My name is {0}, and I really enjoy {1}. Have a nice day! -{0}".format('Gourav', 'Python')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
