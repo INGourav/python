@@ -486,6 +486,82 @@ colors = [red, yellow]
 warm_colors = [color for color in colors if color in ['red', 'yellow', 'green']]
 
 
+# Defining and Using Functions
+def print_something(something):
+    pass
+
+def print_name(name):
+    print(f"Name is {name}")
+
+print_name("Gourav") # This will take Gourav as a param and place this at place of name
+output = print_name("Gourav") # Here if we will check output using output this will pops' to us nothig as print only prints things (that we have defined in our function)
+
+def add_two(num):
+    return num + 2
+
+result = add_two(2) # now if we will see result then I could have an output stored in it that is 4 due to return block
+result
+
+def add(num1, num2):
+    return num1 +  num2
+
+add(1, 5)
+
+# Parameter Vs Arguments
+def contact_card(name, age, phoe):
+    return f"{name} is {age} and have phone {phone}"
+
+contact_card("Gourav", 26, 55555) # this is how we are passing using positional parameter
+contact_card(age= 26, phone= 55555, name="Gourav") # this is how we are passing the value using keywords, This is also known as assigment looking operation
+contact_card("Gourav", age= 26, phone=55555) # this will work too for us
+contact_card(26, name="Gourav", phone= 55555) # this wouldn't work for us coz it will consider 26 is name.
+
+def can_drive(age, drive_age=16):
+    return age >= driving_age
+
+can_drive(29) # this will give output True
+can_drive(16, drive_age=18) # we can override the function too
+can_drive(16, 18) # we can do it this way too
+
+def can_drive(age, driving_age=16, vehicle_type):
+    pass
+# The above function wouldn't work due to only one param has already defined value and rest has nothing so we have to folllow uni process
+
+# Recursion
+1,1,2,3,5,8,13
+f(n) = f(n-2) + f(n-1)
+f(5) = f(3) + f(4)
+f(5) = f(1) + f(2) + f(2) + f(3)
+# for further please check fib.py in the same repo
+
+# Creating and Using Generators
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
